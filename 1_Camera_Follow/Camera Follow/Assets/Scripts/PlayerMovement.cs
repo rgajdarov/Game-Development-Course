@@ -15,8 +15,8 @@ public class PlayerMovement : MonoBehaviour {
 							.normalized
 				* Time.deltaTime
 				* speed;
-		Vector3 pointToLookAt = transform.position
-							  + moveDirection * 100;
+				
+		Vector3 pointToLookAt = transform.position + moveDirection * 100;
 
 		transform.position += moveDirection;
 		transform.LookAt(pointToLookAt);
